@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    M2Commerce Enterprise
+ * @package     M2Commerce_AutoSelectColorAndSize
+ * @copyright   Copyright (c) 2023 M2Commerce Enterprise
+ * @author      dawoodgondaldev@gmail.com
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="M2Commerce\AutoSelectColorAndSize\Block\CategoryDetails" name="config.for.search.results"
+                   template="M2Commerce_AutoSelectColorAndSize::categoryList.phtml" after='-'/>
+        </referenceContainer>
+    </body>
+</page>

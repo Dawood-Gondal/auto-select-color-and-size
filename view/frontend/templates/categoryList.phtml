@@ -1,0 +1,17 @@
+<?php
+/**
+ * @category    M2Commerce Enterprise
+ * @package     M2Commerce_AutoSelectColorAndSize
+ * @copyright   Copyright (c) 2023 M2Commerce Enterprise
+ * @author      dawoodgondaldev@gmail.com
+ */
+
+/** @var \M2Commerce\AutoSelectColorAndSize\Block\CategoryDetails $block */
+
+$autoColorSelectionStatusCP = $block->getAutoColorSelectionStatusCategoryPage();
+$autoSizeSelectionStatusCP = $block->getAutoSizeSelectionStatusCategoryPage();
+?>
+<script type="text/javascript">
+    window.swatchAutoColorSelectCategoryPage = <?php echo json_encode($autoColorSelectionStatusCP); ?>;
+    window.swatchAutoSizeSelectCategoryPage = <?php echo json_encode($autoSizeSelectionStatusCP); ?>;
+</script>
